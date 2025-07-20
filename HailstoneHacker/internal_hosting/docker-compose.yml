@@ -7,7 +7,7 @@ services:
       - 13338:9999
     restart: always
     healthcheck:
-      test: ["CMD", "nc", "-z", "localhost", "13337"]
+      test: ["CMD", "nc", "-z", "localhost", "13338"]
       interval: 1m00s
       timeout: 10s
       retries: 3

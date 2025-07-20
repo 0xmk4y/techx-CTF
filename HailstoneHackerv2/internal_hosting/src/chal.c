@@ -23,7 +23,7 @@
 
 #define ERRORMSG "Error.\n"
 
-#define FLAGPREFIX "kalmar{"
+#define FLAGPREFIX "techx{"
 #define FLAGSUFFIX "}"
 
 void timer_callback(int signum)
