@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  hailstonehackerv2:
+    build: .
+    ports:
+      - 13339:9999
+    restart: always
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "13337"]
+      interval: 1m00s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
